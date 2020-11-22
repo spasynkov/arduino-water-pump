@@ -75,6 +75,7 @@ int readGroundSensorData() {
   Serial.print("Reading ground moisture level... ");
   int result = analogRead(groundSensor);
   Serial.println(result);
+  return result;
 }
 
 int readWaterLevel() {
