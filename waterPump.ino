@@ -53,7 +53,8 @@ void loop() {
       Serial.println(String("The ground is wet enough (") + groundSensorData + ")");
     }
   }
-  
+
+  Serial.println("Finished.");
   delay(MAIN_LOOP_LATENCY);
 }
 
