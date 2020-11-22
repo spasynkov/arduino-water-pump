@@ -1,6 +1,7 @@
 int waterLevel = 1,
 groundSensor = 2,
 power = 3,
+pump = 4,
 beeper = 11,
 led = 13;
 
@@ -19,6 +20,7 @@ void setup() {
   pinMode(waterLevel, INPUT);
   pinMode(groundSensor, INPUT);
   pinMode(power, OUTPUT);
+  pinMode(pump, OUTPUT);
   pinMode(beeper, OUTPUT);
   pinMode(led, OUTPUT);
 }
@@ -62,11 +64,11 @@ void pumpWater() {
 }
 
 void powerOnPump() {
-  // TODO
+  digitalWrite(pump, HIGH);
 }
 
 void powerOffPump() {
-  // TODO
+  digitalWrite(pump, LOW);
 }
 
 int readGroundSensorData() {
